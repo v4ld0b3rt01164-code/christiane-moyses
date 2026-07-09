@@ -87,6 +87,7 @@ section{padding-block:var(--space-3xl)}
 .split-text{max-width:48ch}
 .split-media{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg)}
 .split-media img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.split-media img[src*="foto-dra"]{aspect-ratio:auto;object-fit:contain}
 
 /* ─── BUTTONS ─── */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5em;padding:0.75em 1.5em;font-family:var(--font-sans);font-size:var(--text-sm);font-weight:550;line-height:1;border-radius:var(--radius-md);transition:background 0.2s ease,transform 0.15s ease;min-height:44px;min-width:44px;text-wrap:nowrap}
@@ -124,17 +125,14 @@ section{padding-block:var(--space-3xl)}
 .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-sm)}
 .hero-cta{font-size:var(--text-base);padding:0.85em 2em}
 
-/* Hero photo frame */
-.hero-photo-wrap{position:relative;display:flex;align-items:center;justify-content:center;order:-1}
-.hero-photo{width:100%;max-width:480px;height:auto;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);aspect-ratio:auto}
-.hero-photo-bg{position:absolute;inset:-10px;background:var(--office-cream);border-radius:calc(var(--radius-lg) + 10px);z-index:-1}
-
-/* ECG accent behind photo */
-.hero-ecg-accent{position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);width:85%;max-width:380px;height:auto;opacity:0.22;z-index:-1}
-.hero-ecg-accent path{stroke:var(--ruby);stroke-width:3;fill:none}
+/* Hero visual — 3D heart */
+.hero-visual{display:flex;align-items:center;justify-content:center;min-height:200px}
+.hero-visual-img{width:100%;max-width:500px;height:auto;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);background:var(--office-cream)}
 
 /* ─── SECTION: DARK PANEL ─── */
-.section-dark{background:var(--mahogany);color:var(--color-dark-text)}
+.section-dark{background:var(--mahogany);color:var(--color-dark-text);position:relative;overflow:hidden}
+.section-dark::before{content:'';position:absolute;inset:0;background-image:url('/cardio- (1).jpg');background-size:cover;background-position:center;background-repeat:no-repeat;opacity:0.10;mix-blend-mode:soft-light;pointer-events:none}
+.section-dark .container{position:relative;z-index:1}
 .section-dark h2{color:var(--white)}
 .section-dark h3{color:var(--warm-sand)}
 .section-dark .section-label{color:var(--warm-sand)}
@@ -159,6 +157,9 @@ section{padding-block:var(--space-3xl)}
 .about-placeholder p+p{margin-top:var(--space-xs)}
 
 /* ─── REVIEWS ─── */
+.reviews-header{text-align:center;margin-bottom:var(--space-xl)}
+.reviews-ecg-divider{display:block;width:180px;height:auto;margin:var(--space-sm) auto var(--space-xl);opacity:0.18}
+.reviews-ecg-divider path{stroke:var(--ruby)}
 .reviews-card{max-width:32rem;margin-inline:auto;padding:var(--space-xl);background:var(--white);border:1px solid var(--color-border);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);text-align:center;display:flex;flex-direction:column;align-items:center;gap:var(--space-md)}
 .reviews-score{font-size:var(--text-3xl);font-weight:700;color:var(--ruby);line-height:1}
 .reviews-count{font-size:var(--text-sm);color:var(--color-ink-light)}
@@ -196,7 +197,7 @@ section{padding-block:var(--space-3xl)}
 
 @media (min-width: 768px) {
   .hero-inner{grid-template-columns:1fr 1fr}
-  .hero-photo-wrap{order:0}
+  .hero-visual{min-height:240px}
   .split-panel{grid-template-columns:1fr 1fr}
   .split-reverse .split-media{order:-1}
   .contact-grid{grid-template-columns:repeat(2,1fr)}

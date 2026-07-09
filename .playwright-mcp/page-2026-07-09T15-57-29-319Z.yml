@@ -1,0 +1,139 @@
+- generic [active] [ref=f9e1]:
+  - banner [ref=f9e2]:
+    - generic [ref=f9e3]:
+      - link "Dra. Christiane Moysés — Início" [ref=f9e4] [cursor=pointer]:
+        - /url: "#hero"
+      - link "WhatsApp" [ref=f9e5] [cursor=pointer]:
+        - /url: https://wa.me/+5516989991790
+        - img [ref=f9e6]
+        - text: WhatsApp
+  - main [ref=f9e8]:
+    - generic [ref=f9e11]:
+      - generic [ref=f9e12]:
+        - heading "Dra. Christiane Moysés" [level=1] [ref=f9e13]:
+          - text: Dra. Christiane
+          - text: Moysés
+        - paragraph [ref=f9e14]: Cardiologia e Clínica Médica
+        - generic [ref=f9e15]:
+          - generic [ref=f9e16]: CRM 141228
+          - generic "Avaliação 5 de 5 estrelas no Google, 26 avaliações" [ref=f9e17]: ★★★★★ 5.0 · 26 avaliações
+        - generic [ref=f9e18]:
+          - link "Agendar consulta" [ref=f9e19] [cursor=pointer]:
+            - /url: https://wa.me/+5516989991790
+            - img [ref=f9e20]
+            - text: Agendar consulta
+          - link "(16) 98999-1790" [ref=f9e22] [cursor=pointer]:
+            - /url: tel:+5516989991790
+            - img [ref=f9e23]
+            - text: (16) 98999-1790
+      - img [ref=f9e26]
+    - generic [ref=f9e31]:
+      - img "Monitor de sinais vitais com eletrocardiograma em tempo real" [ref=f9e33]
+      - generic [ref=f9e34]:
+        - heading "Áreas de atuação" [level=2] [ref=f9e35]
+        - paragraph [ref=f9e36]: Atendimento em cardiologia e clínica médica geral para toda a família.
+        - generic [ref=f9e37]:
+          - generic [ref=f9e38]:
+            - generic [ref=f9e39]: Consultas e acompanhamento
+            - generic [ref=f9e40]:
+              - generic [ref=f9e41]:
+                - img [ref=f9e42]
+                - generic [ref=f9e45]: Cardiologia Geral
+              - generic [ref=f9e46]:
+                - img [ref=f9e47]
+                - generic [ref=f9e50]: Cardiologia Geriátrica
+              - generic [ref=f9e51]:
+                - img [ref=f9e52]
+                - generic [ref=f9e55]: Hipertensão Arterial
+              - generic [ref=f9e56]:
+                - img [ref=f9e57]
+                - generic [ref=f9e60]: Dislipidemias
+          - generic [ref=f9e61]:
+            - generic [ref=f9e62]: Condições cardíacas
+            - generic [ref=f9e63]:
+              - generic [ref=f9e64]:
+                - img [ref=f9e65]
+                - generic [ref=f9e68]: Arritmias
+              - generic [ref=f9e69]:
+                - img [ref=f9e70]
+                - generic [ref=f9e73]: Cardiopatias
+              - generic [ref=f9e74]:
+                - img [ref=f9e75]
+                - generic [ref=f9e78]: Insuficiência Cardíaca / Angina
+              - generic [ref=f9e79]:
+                - img [ref=f9e80]
+                - generic [ref=f9e83]: Infarto do Miocárdio
+              - generic [ref=f9e84]:
+                - img [ref=f9e85]
+                - generic [ref=f9e88]: Coronariopatias
+          - generic [ref=f9e89]:
+            - generic [ref=f9e90]: Exames
+            - generic [ref=f9e91]:
+              - generic [ref=f9e92]:
+                - img [ref=f9e93]
+                - generic [ref=f9e96]: Eletrocardiograma
+              - generic [ref=f9e97]:
+                - img [ref=f9e98]
+                - generic [ref=f9e101]: Holter 24h
+              - generic [ref=f9e102]:
+                - img [ref=f9e103]
+                - generic [ref=f9e106]: MAPA 24h
+    - generic [ref=f9e109]:
+      - generic [ref=f9e110]:
+        - heading "Sobre a Dra. Christiane" [level=2] [ref=f9e111]
+        - generic [ref=f9e112]:
+          - generic [ref=f9e113]:
+            - img [ref=f9e114]
+            - text: A confirmar com a cliente
+          - paragraph [ref=f9e116]: Formação acadêmica, tempo de atuação e abordagem com pacientes em validação.
+          - paragraph [ref=f9e117]: As informações desta seção serão atualizadas após confirmação direta com a Dra. Christiane Moysés.
+      - img "Dra. Christiane Moysés" [ref=f9e119]
+    - generic [ref=f9e121]:
+      - heading "O que dizem os pacientes" [level=2] [ref=f9e122]
+      - generic [ref=f9e123]:
+        - generic [ref=f9e124]: ★★★★★
+        - generic [ref=f9e125]: "5.0"
+        - generic [ref=f9e126]: 26 avaliações no Google
+        - blockquote [ref=f9e127]: “Excelente profissional, muito atenciosa e competente”
+        - generic [ref=f9e128]:
+          - img [ref=f9e129]
+          - text: Avaliação no Google
+    - generic [ref=f9e135]:
+      - heading "Entre em contato" [level=2] [ref=f9e136]
+      - generic [ref=f9e137]:
+        - 'link "Telefone: (16) 98999-1790" [ref=f9e138] [cursor=pointer]':
+          - /url: tel:+5516989991790
+          - img [ref=f9e139]
+          - generic [ref=f9e141]:
+            - generic [ref=f9e142]: Telefone
+            - generic [ref=f9e143]: (16) 98999-1790
+        - 'link "WhatsApp: (16) 98999-1790" [ref=f9e144] [cursor=pointer]':
+          - /url: https://wa.me/+5516989991790
+          - img [ref=f9e145]
+          - generic [ref=f9e147]:
+            - generic [ref=f9e148]: WhatsApp
+            - generic [ref=f9e149]: (16) 98999-1790
+        - link "Endereço no Google Maps" [ref=f9e150] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Av.+José+Espírito+Santo+Tanajura,+14+-+Centro,+Miguelópolis+-+SP
+          - img [ref=f9e151]
+          - generic [ref=f9e154]:
+            - generic [ref=f9e155]: Endereço
+            - generic [ref=f9e156]: Av. José Espírito Santo Tanajura, 14 - Centro, Miguelópolis - SP
+        - link "Instagram @Chrismoyses" [ref=f9e157] [cursor=pointer]:
+          - /url: https://instagram.com/Chrismoyses
+          - img [ref=f9e158]
+          - generic [ref=f9e161]:
+            - generic [ref=f9e162]: Instagram
+            - generic [ref=f9e163]: "@Chrismoyses"
+  - contentinfo [ref=f9e165]:
+    - generic [ref=f9e166]:
+      - paragraph [ref=f9e167]: Dra. Christiane Moysés · CRM 141228
+      - paragraph [ref=f9e168]: Cardiologia e Clínica Médica · Miguelópolis-SP
+      - link "@Chrismoyses" [ref=f9e169] [cursor=pointer]:
+        - /url: https://instagram.com/Chrismoyses
+        - img [ref=f9e170]
+        - text: "@Chrismoyses"
+  - link "Agendar consulta pelo WhatsApp" [ref=f9e173] [cursor=pointer]:
+    - /url: https://wa.me/+5516989991790
+    - img [ref=f9e174]
+    - generic [ref=f9e176]: WhatsApp
