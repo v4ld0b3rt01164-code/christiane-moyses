@@ -47,13 +47,10 @@ const services = [
       <div class="container">
         <div class="hero-inner">
           <div class="hero-text">
-            <svg class="hero-ecg" viewBox="0 0 322 247" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
-              <g transform="matrix(1,0,0,1,159.445,117.001)">
-                <path id="ecg-path" stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke="#C2181C"
-                  stroke-dasharray="1000" stroke-dashoffset="1000"
-                  d="M-97.667,9.888C-97.667,9.888,-58.556,9.888,-58.556,9.888C-58.556,9.888,-51.889,0.999,-51.889,0.999C-51.889,0.999,-43.667,41.445,-43.667,41.445C-43.667,41.445,-31.222,-41.445,-31.222,-41.445C-31.222,-41.445,-23,8.333,-23,8.333C-23,8.333,-14.556,-7.889,-14.556,-7.889C-14.556,-7.889,-7,9.445,-7,9.445C-7,9.445,27.889,9.888,27.889,9.888C27.889,9.888,35.889,-24.335,35.889,-24.335C35.889,-24.335,45.889,19.221,45.889,19.221C45.889,19.221,54.556,-0.112,54.556,-0.112C54.556,-0.112,61.222,9.221,61.222,9.221C61.222,9.221,80.216,9.466,95.397,9.663" />
-              </g>
-            </svg>
+            <div class="hero-ecg" aria-hidden="true">
+              <img src="/ecg_transparent.png" alt="" class="hero-ecg-img" />
+              <div class="hero-ecg-scanner"></div>
+            </div>
             <h1 class="hero-name">Dra. Christiane<br />Moysés</h1>
             <p class="hero-specialty">Cardiologia e Clínica Médica</p>
 
@@ -64,7 +61,9 @@ const services = [
           </div>
 
           <div class="hero-visual" aria-hidden="true">
-            <img src="/cardio- (1).png" alt="" class="hero-visual-img" width="600" height="600" />
+            <div class="hero-visual-beat">
+              <img src="/cardio- (1).png" alt="" class="hero-visual-img" width="600" height="600" />
+            </div>
           </div>
         </div>
       </div>
@@ -206,23 +205,47 @@ const services = [
   </div>
 </Layout>
 
-<script>
-  const path = document.getElementById('ecg-path');
-  if (path) {
-    const DURATION = 4000;
-    function animate(ts) {
-      const t = (ts % DURATION) / DURATION;
-      let dash, opacity;
-      if (t < 0.08)      { dash = 1000; opacity = 0.12 + (1 - 0.12) * (t / 0.08); }
-      else if (t < 0.35) { dash = 1000 - 1000 * ((t - 0.08) / 0.27); opacity = 1; }
-      else if (t < 0.60) { dash = 0; opacity = 1; }
-      else if (t < 0.63) { dash = 0; opacity = 1 - (1 - 0.12) * ((t - 0.60) / 0.03); }
-      else if (t < 0.64) { dash = 1000; opacity = 0.12; }
-      else               { dash = 1000; opacity = 0.12; }
-      path.setAttribute('stroke-dashoffset', Math.round(dash));
-      path.setAttribute('opacity', opacity.toFixed(2));
-      requestAnimationFrame(animate);
+<script is:inline>
+  const ecgImg = document.querySelector('.hero-ecg-img');
+  const ecgScanner = document.querySelector('.hero-ecg-scanner');
+  if (ecgImg && ecgScanner) {
+    const SWEEP = 2600;
+    ecgImg.style.willChange = 'clip-path';
+    ecgScanner.style.willChange = 'left, opacity';
+    function sweepReveal(ts) {
+      const t = (ts % SWEEP) / SWEEP;
+      ecgImg.style.clipPath = t < 0.98
+        ? `inset(0 ${100 * (1 - t / 0.98)}% 0 0)`
+        : 'inset(0 100% 0 0)';
+      ecgScanner.style.left = t < 0.98 ? `${(t / 0.98) * 100}%` : '0%';
+      ecgScanner.style.opacity = t < 0.98 ? '1' : '0';
+      requestAnimationFrame(sweepReveal);
     }
-    requestAnimationFrame(animate);
+    requestAnimationFrame(sweepReveal);
+  }
+
+  const beat = document.querySelector('.hero-visual-beat');
+  if (beat) {
+    beat.style.willChange = 'transform';
+    const BEAT_DURATION = 1050;
+    const keyframes = [
+      { t: 0,    s: 1 },
+      { t: 0.14, s: 1.13 },
+      { t: 0.28, s: 1 },
+      { t: 0.42, s: 1.09 },
+      { t: 0.70, s: 1 },
+      { t: 1,    s: 1 },
+    ];
+    function heartBeat(ts) {
+      const t = (ts % BEAT_DURATION) / BEAT_DURATION;
+      let i = 0;
+      while (i < keyframes.length - 2 && keyframes[i + 1].t <= t) i++;
+      const k0 = keyframes[i], k1 = keyframes[i + 1];
+      const p = (t - k0.t) / (k1.t - k0.t);
+      const s = k0.s + (k1.s - k0.s) * p;
+      beat.style.transform = `scale(${s})`;
+      requestAnimationFrame(heartBeat);
+    }
+    requestAnimationFrame(heartBeat);
   }
 </script>
