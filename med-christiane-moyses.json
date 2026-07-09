@@ -1,0 +1,54 @@
+{
+  "cliente_id": "med-christiane-moyses",
+  "segmento": "Médico(a)",
+  "dados_negocio": {
+    "nome_fantasia": "Dra. Christiane Moysés - Cardiologia e Clínica Médica",
+    "nome_responsavel": "Dra. Christiane Moysés",
+    "especialidade": "Cardiologia e Clínica Médica",
+    "endereco": {
+      "logradouro": "Av. José Espírito Santo Tanajura, 14 - Centro, Miguelópolis - SP",
+      "cidade": "Miguelópolis",
+      "estado": "SP",
+      "pais": "Brasil"
+    },
+    "geolocalizacao": {
+      "latitude": null,
+      "longitude": null
+    },
+    "contato": {
+      "telefone": "+55 16 98999-1790",
+      "whatsapp": "+55 16 98999-1790",
+      "email": null,
+      "site_atual": null,
+      "instagram": null
+    },
+    "horario_funcionamento": "A CONFIRMAR COM O CLIENTE",
+    "avaliacao_google": {
+      "nota": 5.0,
+      "numero_avaliacoes": 26,
+      "reviews_destaque": [
+        "Excelente profissional, muito atenciosa e competente"
+      ]
+    },
+    "place_id_google_maps": null
+  },
+  "conteudo_site": {
+    "areas_atuacao_especialidades": "A CONFIRMAR COM O CLIENTE",
+    "sobre": "A CONFIRMAR COM O CLIENTE — bio profissional, formação, tempo de atuação",
+    "diferenciais": "A CONFIRMAR COM O CLIENTE",
+    "fotos": "A CONFIRMAR COM O CLIENTE — foto profissional e/ou do espaço/consultório",
+    "depoimentos_adicionais": "A CONFIRMAR COM O CLIENTE — opcional, além dos reviews do Google"
+  },
+  "infraestrutura_tecnica": {
+    "hospedagem": "Cloudflare Pages",
+    "dns_cdn": "Cloudflare",
+    "status_site_atual": "Perfis em diretórios (Doctoralia, Médicos Brasil); sem site próprio",
+    "observacao": "Confirmar diretamente com o cliente antes de publicar; dados de contato vieram do Google Maps e podem estar desatualizados"
+  },
+  "prospeccao": {
+    "prioridade": "Alta",
+    "fonte_dados": "Google Maps (Google Business Profile)",
+    "data_coleta": "2026-07-08",
+    "status_contato": "A iniciar"
+  }
+}

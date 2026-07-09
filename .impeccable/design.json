@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-09T15:02:00.000Z",
+  "title": "Design System: Dra. Christiane Moysés",
+  "extensions": {
+    "colorMeta": {
+      "pure-white": {
+        "role": "neutral",
+        "displayName": "Pure White",
+        "canonical": "oklch(1.000 0.000 0)",
+        "tonalRamp": [
+          "oklch(1.000 0.000 0)",
+          "oklch(0.980 0.000 0)",
+          "oklch(0.950 0.000 0)",
+          "oklch(0.900 0.000 0)",
+          "oklch(0.820 0.000 0)",
+          "oklch(0.700 0.000 0)",
+          "oklch(0.500 0.000 0)",
+          "oklch(0.300 0.000 0)"
+        ]
+      },
+      "burgundy": {
+        "role": "primary",
+        "displayName": "Burgundy",
+        "canonical": "oklch(0.380 0.170 22)",
+        "tonalRamp": [
+          "oklch(0.150 0.040 22)",
+          "oklch(0.220 0.075 22)",
+          "oklch(0.280 0.110 22)",
+          "oklch(0.340 0.160 22)",
+          "oklch(0.380 0.170 22)",
+          "oklch(0.450 0.150 22)",
+          "oklch(0.550 0.110 22)",
+          "oklch(0.930 0.022 22)"
+        ]
+      },
+      "burgundy-dark": {
+        "role": "primary",
+        "displayName": "Burgundy Dark",
+        "canonical": "oklch(0.220 0.075 22)",
+        "tonalRamp": []
+      },
+      "whatsapp-green": {
+        "role": "secondary",
+        "displayName": "WhatsApp Green",
+        "canonical": "oklch(0.540 0.185 155)",
+        "tonalRamp": []
+      }
+    },
+    "shadows": [
+      { "name": "ambient-low", "value": "0 1px 2px oklch(0 0 0 / 0.06)", "purpose": "Service cards on hover" },
+      { "name": "ambient-mid", "value": "0 4px 12px oklch(0 0 0 / 0.08)", "purpose": "Review card" },
+      { "name": "ambient-high", "value": "0 8px 30px oklch(0 0 0 / 0.10)", "purpose": "About section image" },
+      { "name": "whatsapp-glow", "value": "0 4px 20px oklch(0.540 0.150 155 / 0.40)", "purpose": "Floating WhatsApp CTA" }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "0.2s ease", "purpose": "Default hover/state transition" },
+      { "name": "ease-transform", "value": "0.15s ease", "purpose": "Button press/scale feedback" }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "480px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main CTA button on burgundy background with white text.",
+      "html": "<button class=\"ds-btn-primary\">Agendar consulta</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5em; padding: 0.75em 1.5em; font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 1rem; font-weight: 550; line-height: 1; border: none; border-radius: 8px; background: oklch(0.380 0.170 22); color: oklch(1.000 0.000 0); cursor: pointer; min-height: 44px; min-width: 44px; transition: background-color 0.2s ease, transform 0.15s ease; } .ds-btn-primary:hover { background: oklch(0.340 0.160 22); } .ds-btn-primary:active { transform: scale(0.975); } .ds-btn-primary:focus-visible { outline: 2px solid oklch(0.380 0.170 22); outline-offset: 2px; border-radius: 4px; }"
+    },
+    {
+      "name": "WhatsApp Button",
+      "kind": "button",
+      "refersTo": "button-whatsapp",
+      "description": "WhatsApp contact CTA with inline phone icon SVG.",
+      "html": "<a class=\"ds-btn-whatsapp\" href=\"https://wa.me/+5516989991790\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z\"/></svg>WhatsApp</a>",
+      "css": ".ds-btn-whatsapp { display: inline-flex; align-items: center; justify-content: center; gap: 0.5em; padding: 0.75em 1.5em; font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 1rem; font-weight: 550; line-height: 1; border: none; border-radius: 8px; background: oklch(0.540 0.185 155); color: oklch(1.000 0.000 0); cursor: pointer; min-height: 44px; text-decoration: none; transition: background-color 0.2s ease, transform 0.15s ease; } .ds-btn-whatsapp:hover { background: oklch(0.480 0.175 155); } .ds-btn-whatsapp:active { transform: scale(0.975); }"
+    },
+    {
+      "name": "Light Button (on dark)",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "White button on burgundy-dark section backgrounds.",
+      "html": "<a class=\"ds-btn-light\" href=\"#\">Agendar consulta pelo WhatsApp</a>",
+      "css": ".ds-btn-light { display: inline-flex; align-items: center; justify-content: center; gap: 0.5em; padding: 0.85em 2em; font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 1rem; font-weight: 550; line-height: 1; border: none; border-radius: 8px; background: oklch(1.000 0.000 0); color: oklch(0.380 0.170 22); cursor: pointer; min-height: 44px; text-decoration: none; transition: background-color 0.2s ease; } .ds-btn-light:hover { background: oklch(0.950 0.000 0); }"
+    },
+    {
+      "name": "Service Item",
+      "kind": "card",
+      "refersTo": "service-item",
+      "description": "List item for medical services with check icon.",
+      "html": "<div class=\"ds-service-item\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg><span>Cardiologia Geral</span></div>",
+      "css": ".ds-service-item { display: flex; align-items: flex-start; gap: 0.5rem; padding: 1rem; background: oklch(1.000 0.000 0); border: 1px solid oklch(0.880 0.005 20); border-radius: 8px; font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.9375rem; font-weight: 500; line-height: 1.4; transition: border-color 0.3s ease, box-shadow 0.3s ease; } .ds-service-item:hover { border-color: oklch(0.380 0.170 22); box-shadow: 0 1px 2px oklch(0 0 0 / 0.06); } .ds-service-item svg { flex-shrink: 0; width: 1.25em; height: 1.25em; margin-top: 0.15em; color: oklch(0.380 0.170 22); }"
+    },
+    {
+      "name": "Contact Item (dark bg)",
+      "kind": "card",
+      "refersTo": "contact-item",
+      "description": "Clickable contact card on dark burgundy background.",
+      "html": "<a class=\"ds-contact-item\" href=\"tel:+5516989991790\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z\"/></svg><div><div style=\"font-size:0.75rem;font-weight:550;opacity:0.6;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:0.15em\">Telefone</div><div style=\"font-size:0.9375rem\">(16) 98999-1790</div></div></a>",
+      "css": ".ds-contact-item { display: flex; align-items: flex-start; gap: 0.5rem; padding: 1rem; background: oklch(1.000 0.000 0 / 0.06); border: 1px solid oklch(1.000 0.000 0 / 0.10); border-radius: 8px; color: oklch(1.000 0.000 0); text-decoration: none; font-family: 'Source Sans 3', system-ui, sans-serif; transition: background-color 0.3s ease; } .ds-contact-item:hover { background: oklch(1.000 0.000 0 / 0.10); }"
+    },
+    {
+      "name": "Review Card",
+      "kind": "card",
+      "refersTo": "review-card",
+      "description": "Centered review display card with stars, score, count, and quote.",
+      "html": "<div class=\"ds-review-card\"><span style=\"font-size:1.25rem;color:oklch(0.600 0.190 80);letter-spacing:0.08em\">★★★★★</span><span style=\"font-family:'Source Serif 4',serif;font-size:3rem;font-weight:600;color:oklch(0.380 0.170 22);line-height:1\">5.0</span><span style=\"font-size:0.875rem;color:oklch(0.450 0.005 20)\">26 avaliações no Google</span><blockquote style=\"font-family:'Source Serif 4',serif;font-size:1.25rem;font-style:italic;max-width:42ch;line-height:1.5\">Excelente profissional, muito atenciosa e competente</blockquote></div>",
+      "css": ".ds-review-card { display: flex; flex-direction: column; align-items: center; gap: 1rem; max-width: 36rem; margin: 0 auto; padding: 2.5rem; background: oklch(1.000 0.000 0); border: 1px solid oklch(0.880 0.005 20); border-radius: 12px; box-shadow: 0 4px 12px oklch(0 0 0 / 0.08); text-align: center; }"
+    },
+    {
+      "name": "Site Header",
+      "kind": "nav",
+      "refersTo": "site-header",
+      "description": "Sticky top navigation with logo and WhatsApp CTA.",
+      "html": "<header class=\"ds-header\"><div style=\"display:flex;align-items:center;justify-content:space-between;max-width:72rem;margin:0 auto;padding:0 1rem;height:3.5rem\"><img src=\"/logo-color.png\" alt=\"\" style=\"height:2rem\"><a class=\"ds-btn-whatsapp\" href=\"#\" style=\"font-size:0.8125rem;padding:0.5em 1em\">WhatsApp</a></div></header>",
+      "css": ".ds-header { position: sticky; top: 0; z-index: 100; background: oklch(1.000 0.000 0 / 0.92); backdrop-filter: blur(12px); border-bottom: 1px solid oklch(0.880 0.005 20); }"
+    },
+    {
+      "name": "Floating WhatsApp CTA",
+      "kind": "custom",
+      "refersTo": "fixed-cta",
+      "description": "Fixed floating WhatsApp button in bottom-right corner.",
+      "html": "<a class=\"ds-fixed-cta\" href=\"https://wa.me/+5516989991790\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z\"/></svg><span>WhatsApp</span></a>",
+      "css": ".ds-fixed-cta { position: fixed; bottom: 1.25rem; right: 1.25rem; z-index: 200; display: flex; align-items: center; gap: 0.5em; padding: 0.75em 1.25em; background: oklch(0.540 0.185 155); color: oklch(1.000 0.000 0); border-radius: 999px; font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.9375rem; font-weight: 550; text-decoration: none; box-shadow: 0 4px 20px oklch(0.540 0.150 155 / 0.40); transition: transform 0.2s ease, box-shadow 0.2s ease; } .ds-fixed-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 28px oklch(0.540 0.150 155 / 0.50); } .ds-fixed-cta:active { transform: translateY(0); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "O Consultório ao Entardecer",
+    "overview": "Um consultório médico em cidade pequena ao entardecer — luz quente filtrada por persianas, madeira escura, confiança silenciosa. O sistema visual traduz a seriedade técnica da cardiologia com o acolhimento da clínica médica geral. Não é um hospital frio, não é um app de telemedicina corporativo: é o consultório da médica de confiança da família.",
+    "keyCharacteristics": [
+      "Committed color strategy: o bordô carrega 30-60% da superfície",
+      "Serif display + sans body em contraste de estrutura",
+      "Escala fluid com clamp() em tipografia e espaçamento",
+      "Sombras sutis, sem exagero de profundidade",
+      "Seções alternadas claro/escuras para ritmo visual",
+      "CTA de WhatsApp sempre visível (header fixo + botão flutuante)"
+    ],
+    "rules": [
+      { "name": "The Committed Rule", "body": "O bordô não é um acento tímido de 10%. Ele carrega 30-60% da superfície total da página.", "section": "colors" },
+      { "name": "The White-Is-White Rule", "body": "O fundo principal é branco puro (oklch(1 0 0)), não off-white, cream, ou paper.", "section": "colors" },
+      { "name": "The Single Eyebrow Rule", "body": "Labels uppercase com tracking existem em exatamente um lugar: o badge 'A CONFIRMAR'.", "section": "typography" },
+      { "name": "The Body-Light Rule", "body": "O texto corpo usa peso 350, não 400. A sans em peso mais leve respira melhor.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Superfícies são planas em repouso. Sombras apenas em hover ou destaque.", "section": "elevation" }
+    ],
+    "dos": [
+      "Usar o bordô como cor dominante",
+      "Usar branco puro como fundo principal",
+      "Manter o WhatsApp sempre visível",
+      "Usar texto real e verificável",
+      "Sinalizar conteúdo pendente com badge",
+      "Usar imagens reais do projeto, não stock photos",
+      "Manter tom sério e técnico, mas humano",
+      "Respeitar mobile-first"
+    ],
+    "donts": [
+      "Não usar ícone de ECG genérico",
+      "Não usar stock photo de jaleco com prancheta",
+      "Não usar glassmorphism ou gradiente roxo",
+      "Não escrever textos vazios sem informação concreta",
+      "Não soar como app de telemedicina corporativo",
+      "Não usar tom de urgência/alarme",
+      "Não inventar estatísticas ou depoimentos",
+      "Não usar azul/verde hospitalar frio",
+      "Não usar side-stripe borders",
+      "Não usar gradient text",
+      "Não usar cards aninhados",
+      "Não repetir eyebrows em todas as seções"
+    ]
+  }
+}
