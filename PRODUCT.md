@@ -67,14 +67,32 @@ saindo com confiança suficiente para agendar consulta. CTA principal: telefone/
 - [x] CRM (141228 — confirmado via arte publicada no Google Maps)
 - [x] Exames/procedimentos realizados no local (lista de 12 serviços confirmada)
 - [x] Instagram (@Chrismoyses)
+- [x] Foto profissional (foto-dra.png fornecida pela cliente)
 - [ ] Formação acadêmica e especialização
 - [ ] Texto "sobre" (tempo de atuação, abordagem com pacientes)
-- [ ] Foto profissional e/ou do consultório
 - [ ] Horário de funcionamento e convênios atendidos
 - [ ] E-mail de contato
 - [ ] Autorização para publicar nome, avaliações e dados no site
 
 ## Infraestrutura de publicação
 
-- Hospedagem/CDN: Cloudflare Pages
-- Stack a critério do desenvolvedor, compatível com deploy estático em Cloudflare Pages
+- Hospedagem/CDN: Cloudflare Pages (https://christiane-moyses.pages.dev)
+- Stack: Astro (static site generator, output estático)
+- Deploy: wrangler pages deploy (manual) + GitHub Actions (Workflow pendente de scope)
+- Repositório: https://github.com/v4ld0b3rt01164-code/christiane-moyses
+
+## Assets do projeto
+
+| Arquivo | Tipo | Uso no site |
+|---------|------|-------------|
+| `logo-color.png` | Logo | Header como pulse.svg + texto "Christiane Moysés" |
+| `logo-white.png` | Logo | Seção Contato (fundo mahogany) |
+| `foto-dra.png` | Foto | Seção Sobre (split-panel direito) |
+| `cardio- (1).png` | Imagem | Hero visual (coração 3D, split-panel direito) |
+| `cardio- (1).jpg` | Imagem | Seção Serviços (split-panel esquerdo) + textura ::before |
+| `cardio- (2).png` | Imagem | Divisor ECG decorativo na seção Avaliações |
+| `cardio-3.jpg` | Imagem | Seção Sobre (modelo anatômico) |
+| `eletro.svg` | SVG | Animação ECG no hero (acima do h1) |
+| `pulse.svg` | SVG | Animação de pulso no header NAV |
+| `cardio-2.jpg` | — | NÃO UTILIZADO — estetoscópio rosa genérico |
+| `servicos.png` | — | Dados textuais extraídos (CRM, serviços, Instagram) |
