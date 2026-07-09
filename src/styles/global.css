@@ -121,7 +121,7 @@ section{padding-block:var(--space-3xl)}
 .hero-text{max-width:48ch;padding-block:0}
 .hero-ecg{display:block;width:100%;max-width:clamp(180px, 34vw, 450px);height:auto;margin:0 0 clamp(0.15rem, 0.5vh, 0.5rem);overflow:visible}
 .ecg-anim{stroke-dasharray:1000;stroke-dashoffset:1000;animation:ecgLoop 4s linear infinite}
-@keyframes ecgLoop{0%{stroke-dashoffset:1000;opacity:.12}8%{stroke-dashoffset:1000;opacity:1}35%{stroke-dashoffset:0;opacity:1}60%{stroke-dashoffset:0;opacity:1}63%{stroke-dashoffset:0;opacity:.12}64%{stroke-dashoffset:1000;opacity:.12}100%{stroke-dashoffset:1000;opacity:.12}}
+@keyframes ecgLoop{0%{stroke-dashoffset:1000px;opacity:.12}8%{stroke-dashoffset:1000px;opacity:1}35%{stroke-dashoffset:0px;opacity:1}60%{stroke-dashoffset:0px;opacity:1}63%{stroke-dashoffset:0px;opacity:.12}64%{stroke-dashoffset:1000px;opacity:.12}100%{stroke-dashoffset:1000px;opacity:.12}}
 .hero-visual-img{width:100%;max-width:550px;height:auto;max-height:85vh}
 .hero-name{font-size:clamp(2rem, 5.5vw, 4rem);margin-bottom:0;line-height:1.05}
 .hero-specialty{font-size:clamp(1rem, 1.6vw, 1.35rem);font-weight:400;color:var(--color-ink-light);margin-bottom:clamp(0.25rem, 0.8vh, 0.6rem)}
@@ -210,7 +210,6 @@ section{padding-block:var(--space-3xl)}
 
 /* ─── RESPONSIVE ─── */
 @media (min-width: 768px) {
-  .hero{overflow:hidden}
   .hero-inner{grid-template-columns:1fr 1fr;gap:clamp(1.5rem, 4vw, 3rem)}
   .hero-visual{min-height:0;align-items:center;justify-content:flex-end}
   .hero-visual-img{max-height:80vh;object-fit:contain}
