@@ -85,14 +85,10 @@ saindo com confiança suficiente para agendar consulta. CTA principal: telefone/
 
 | Arquivo | Tipo | Uso no site |
 |---------|------|-------------|
-| `logo-color.png` | Logo | Header como pulse.svg + texto "Christiane Moysés" |
-| `logo-white.png` | Logo | Seção Contato (fundo mahogany) |
+| `logo-color.png` | Logo | Favicon no Layout.astro |
 | `foto-dra.png` | Foto | Seção Sobre (split-panel direito) |
 | `cardio- (1).png` | Imagem | Hero visual (coração 3D, split-panel direito) |
 | `cardio- (1).jpg` | Imagem | Seção Serviços (split-panel esquerdo) + textura ::before |
-| `cardio- (2).png` | Imagem | Divisor ECG decorativo na seção Avaliações |
-| `cardio-3.jpg` | Imagem | Seção Sobre (modelo anatômico) |
-| `eletro.svg` | SVG | Animação ECG no hero (acima do h1) |
-| `pulse.svg` | SVG | Animação de pulso no header NAV |
-| `cardio-2.jpg` | — | NÃO UTILIZADO — estetoscópio rosa genérico |
-| `servicos.png` | — | Dados textuais extraídos (CRM, serviços, Instagram) |
+| `ecg_transparent.png` | PNG | Animação ECG no hero (acima do h1, sweep-reveal JS) |
+| `atuacao.jpg` | Imagem | Seção Serviços (split-panel esquerdo, áreas de atuação) |
+| `pulse.svg` | SVG | Ícone de pulso no header NAV |

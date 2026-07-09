@@ -68,15 +68,16 @@ components:
 
 Sistema visual para site institucional de cardiologista em Miguelópolis-SP. Paleta derivada do `servicos.png` e `logo-color.png` da médica — ruby red do logo, mahogany do painel de serviços, office cream da parede do consultório. Single page, mobile-first, Astro static.
 
-Tipografia única (Work Sans) ecoando o logo sans-serif. Split-panel como motivo estrutural extraído do `servicos.png`. ECG animado no hero referenciando o `eletro.svg`. Dock fixo mobile-only com WhatsApp + telefone.
+Tipografia única (Work Sans) ecoando o logo sans-serif. Split-panel como motivo estrutural extraído do `servicos.png`. ECG animado no hero via JavaScript (requestAnimationFrame) usando `ecg_transparent.png` com efeito sweep + scanner. Coração 3D com animação heartbeat via JS. Dock fixo mobile-only com WhatsApp + telefone.
 
 **Key Characteristics:**
 - Família tipográfica única (Work Sans 300-700)
 - Paleta de 6 cores derivada dos assets originais
 - Split-panel alternado claro/escuro
-- ECG animado via CSS `stroke-dashoffset` no hero
+- ECG animado via JS com efeito sweep-reveal (clip-path) + scanner verde
+- Heartbeat no coração 3D via JS (requestAnimationFrame)
 - Dock fixo inferior apenas em mobile (<768px)
-- Zero JavaScript — 100% HTML + CSS
+- Animações em JS para compatibilidade cross-browser (Chrome + Firefox)
 
 ## 2. Colors
 
@@ -126,13 +127,14 @@ Sistema plano com sombras apenas em hover ou destaque. Profundidade comunicada p
 
 ### Hero
 - Split-panel: texto (esquerda) + coração 3D (direita).
-- ECG (`eletro.svg`) animado via CSS stroke-dashoffset acima do h1.
+- ECG (`ecg_transparent.png`) animado via JS com efeito sweep-reveal (clip-path) e scanner verde acima do h1.
+- Coração 3D com animação heartbeat via JS (requestAnimationFrame).
 - Badges: CRM 141228 + Miguelópolis-SP.
 - Sem estrelas ou CTA no hero — CTAs no dock mobile.
 
 ### Services
 - Fundo mahogany com textura ECG (cardio- (1).jpg como ::before).
-- Split-panel: imagem ECG paper (esquerda) + grid de 12 serviços (direita).
+- Split-panel: imagem atuacao.jpg (esquerda) + grid de 12 serviços (direita).
 - Lista plana, sem agrupamento por categoria.
 
 ### About
@@ -141,7 +143,7 @@ Sistema plano com sombras apenas em hover ou destaque. Profundidade comunicada p
 
 ### Reviews
 - Card centralizado: 5.0 + 26 avaliações + citação.
-- Divisor ECG decorativo entre heading e card.
+- Divisor ECG decorativo inline SVG entre heading e card.
 
 ### Contact
 - Fundo mahogany. Grid 2×2: Telefone, WhatsApp, Endereço, Instagram.
@@ -166,7 +168,7 @@ Sistema plano com sombras apenas em hover ou destaque. Profundidade comunicada p
 ### Don't:
 - **Don't** usar Source Serif/Source Sans (substituído por Work Sans)
 - **Don't** usar verde WhatsApp genérico no CTA (ruby da marca)
-- **Don't** usar ícone de ECG genérico (o ECG do site é o eletro.svg da médica)
+- **Don't** usar ícone de ECG genérico (o ECG do site é o ecg_transparent.png da médica)
 - **Don't** usar stock photos de jaleco/prancheta
 - **Don't** usar glassmorphism, gradientes roxos, ou padrão "gerado por IA"
 - **Don't** usar azul/verde hospitalar frio
