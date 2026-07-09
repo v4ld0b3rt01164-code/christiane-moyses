@@ -120,8 +120,6 @@ section{padding-block:var(--space-3xl)}
 .hero-inner{display:grid;gap:clamp(0.75rem, 2vw, 1.5rem);align-items:center;padding-top:clamp(0.25rem, 1.5vh, 1.25rem)}
 .hero-text{max-width:48ch;padding-block:0}
 .hero-ecg{display:block;width:100%;max-width:clamp(180px, 34vw, 450px);height:auto;margin:0 0 clamp(0.15rem, 0.5vh, 0.5rem);overflow:visible}
-.ecg-anim{stroke-dasharray:1000;stroke-dashoffset:1000;animation:ecgLoop 4s linear infinite}
-@keyframes ecgLoop{0%{stroke-dashoffset:1000px;opacity:.12}8%{stroke-dashoffset:1000px;opacity:1}35%{stroke-dashoffset:0px;opacity:1}60%{stroke-dashoffset:0px;opacity:1}63%{stroke-dashoffset:0px;opacity:.12}64%{stroke-dashoffset:1000px;opacity:.12}100%{stroke-dashoffset:1000px;opacity:.12}}
 .hero-visual-img{width:100%;max-width:550px;height:auto;max-height:85vh}
 .hero-name{font-size:clamp(2rem, 5.5vw, 4rem);margin-bottom:0;line-height:1.05}
 .hero-specialty{font-size:clamp(1rem, 1.6vw, 1.35rem);font-weight:400;color:var(--color-ink-light);margin-bottom:clamp(0.25rem, 0.8vh, 0.6rem)}
@@ -226,7 +224,7 @@ section{padding-block:var(--space-3xl)}
 
 @media (prefers-reduced-motion: reduce) {
   *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
-  .ecg-anim{stroke-dashoffset:0!important;opacity:1!important;animation:none!important}
+  #ecg-path{stroke-dashoffset:0!important;opacity:1!important}
 }
 
 /* ─── FOCUS ─── */
