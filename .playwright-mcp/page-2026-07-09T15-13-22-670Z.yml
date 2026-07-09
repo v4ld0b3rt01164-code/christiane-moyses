@@ -1,0 +1,141 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Dra. Christiane Moysés — Início" [ref=e4] [cursor=pointer]:
+        - /url: "#hero"
+      - link "WhatsApp" [ref=e5] [cursor=pointer]:
+        - /url: https://wa.me/+5516989991790
+        - img [ref=e6]
+        - text: WhatsApp
+  - main [ref=e10]:
+    - generic [ref=e12]:
+      - heading "Dra. Christiane Moysés" [level=1] [ref=e13]:
+        - text: Dra. Christiane
+        - text: Moysés
+      - paragraph [ref=e14]: Cardiologia e Clínica Médica
+      - generic [ref=e15]:
+        - generic [ref=e16]: CRM 141228
+        - generic "Avaliação 5 de 5 estrelas no Google, 26 avaliações" [ref=e17]:
+          - generic [ref=e18]: ★★★★★
+          - generic [ref=e19]: 5.0 · 26 avaliações
+      - generic [ref=e20]:
+        - link "WhatsApp" [ref=e21] [cursor=pointer]:
+          - /url: https://wa.me/+5516989991790
+          - img [ref=e22]
+          - text: WhatsApp
+        - link "(16) 98999-1790" [ref=e26] [cursor=pointer]:
+          - /url: tel:+5516989991790
+          - img [ref=e27]
+          - text: (16) 98999-1790
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - heading "Áreas de atuação" [level=2] [ref=e32]
+        - paragraph [ref=e33]: Atendimento em cardiologia e clínica médica geral para toda a família.
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - heading "Consultas e acompanhamento" [level=3] [ref=e36]
+          - generic [ref=e37]:
+            - generic [ref=e38]:
+              - img [ref=e39]
+              - generic [ref=e42]: Cardiologia Geral
+            - generic [ref=e43]:
+              - img [ref=e44]
+              - generic [ref=e47]: Cardiologia Geriátrica
+            - generic [ref=e48]:
+              - img [ref=e49]
+              - generic [ref=e52]: Hipertensão Arterial
+            - generic [ref=e53]:
+              - img [ref=e54]
+              - generic [ref=e57]: Dislipidemias
+        - generic [ref=e58]:
+          - heading "Condições cardíacas" [level=3] [ref=e59]
+          - generic [ref=e60]:
+            - generic [ref=e61]:
+              - img [ref=e62]
+              - generic [ref=e65]: Arritmias
+            - generic [ref=e66]:
+              - img [ref=e67]
+              - generic [ref=e70]: Cardiopatias
+            - generic [ref=e71]:
+              - img [ref=e72]
+              - generic [ref=e75]: Insuficiência Cardíaca / Angina
+            - generic [ref=e76]:
+              - img [ref=e77]
+              - generic [ref=e80]: Infarto do Miocárdio
+            - generic [ref=e81]:
+              - img [ref=e82]
+              - generic [ref=e85]: Coronariopatias
+        - generic [ref=e86]:
+          - heading "Exames" [level=3] [ref=e87]
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - img [ref=e90]
+              - generic [ref=e93]: Eletrocardiograma
+            - generic [ref=e94]:
+              - img [ref=e95]
+              - generic [ref=e98]: Holter 24h
+            - generic [ref=e99]:
+              - img [ref=e100]
+              - generic [ref=e103]: MAPA 24h
+    - generic [ref=e105]:
+      - heading "Sobre a Dra. Christiane" [level=2] [ref=e106]
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - img [ref=e109]
+          - text: A confirmar com a cliente
+        - paragraph [ref=e111]: Formação acadêmica, tempo de atuação e abordagem com pacientes em validação.
+        - paragraph [ref=e112]: As informações desta seção serão atualizadas após confirmação direta com a Dra. Christiane Moysés.
+      - img "Modelo anatômico de coração humano em consultório médico" [ref=e114]
+    - generic [ref=e116]:
+      - heading "O que dizem os pacientes" [level=2] [ref=e117]
+      - generic [ref=e118]:
+        - generic [ref=e119]: ★★★★★
+        - generic [ref=e120]: "5.0"
+        - generic [ref=e121]: 26 avaliações no Google
+        - blockquote [ref=e122]: “ Excelente profissional, muito atenciosa e competente ”
+        - generic [ref=e123]:
+          - img [ref=e124]
+          - text: Avaliação no Google
+    - generic [ref=e130]:
+      - heading "Entre em contato" [level=2] [ref=e131]
+      - generic [ref=e132]:
+        - 'link "Telefone: (16) 98999-1790" [ref=e133] [cursor=pointer]':
+          - /url: tel:+5516989991790
+          - img [ref=e134]
+          - generic [ref=e136]:
+            - generic [ref=e137]: Telefone
+            - generic [ref=e138]: (16) 98999-1790
+        - 'link "WhatsApp: (16) 98999-1790" [ref=e139] [cursor=pointer]':
+          - /url: https://wa.me/+5516989991790
+          - img [ref=e140]
+          - generic [ref=e144]:
+            - generic [ref=e145]: WhatsApp
+            - generic [ref=e146]: (16) 98999-1790
+        - link "Endereço no Google Maps" [ref=e147] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Av.+José+Espírito+Santo+Tanajura,+14+-+Centro,+Miguelópolis+-+SP
+          - img [ref=e148]
+          - generic [ref=e151]:
+            - generic [ref=e152]: Endereço
+            - generic [ref=e153]: Av. José Espírito Santo Tanajura, 14 - Centro, Miguelópolis - SP
+        - link "Instagram @Chrismoyses" [ref=e154] [cursor=pointer]:
+          - /url: https://instagram.com/Chrismoyses
+          - img [ref=e155]
+          - generic [ref=e158]:
+            - generic [ref=e159]: Instagram
+            - generic [ref=e160]: "@Chrismoyses"
+      - link "Agendar consulta pelo WhatsApp" [ref=e162] [cursor=pointer]:
+        - /url: https://wa.me/+5516989991790
+        - img [ref=e163]
+        - text: Agendar consulta pelo WhatsApp
+  - contentinfo [ref=e167]:
+    - generic [ref=e168]:
+      - paragraph [ref=e169]: Dra. Christiane Moysés · CRM 141228
+      - paragraph [ref=e170]: Cardiologia e Clínica Médica · Miguelópolis-SP
+      - link "@Chrismoyses" [ref=e171] [cursor=pointer]:
+        - /url: https://instagram.com/Chrismoyses
+        - img [ref=e172]
+        - text: "@Chrismoyses"
+  - link "Agendar consulta pelo WhatsApp" [ref=e175] [cursor=pointer]:
+    - /url: https://wa.me/+5516989991790
+    - img [ref=e176]
+    - generic [ref=e180]: WhatsApp
